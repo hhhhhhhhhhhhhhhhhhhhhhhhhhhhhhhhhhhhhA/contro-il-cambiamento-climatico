@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+      <title>Il cambiamento climatico, e cosa puoi fare per aiutare</title>
+      <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+      {% block content %}
+      <center><div class="descrizione">
+        <h1>Il cambiamento climatico, e cosa puoi fare per aiutare</h1>
+        <h2>Con "cambiamento climatico", si intende un'aumento o un'abbasso delle temperature medie in giro al mondo, e le conseguenze che seguono. Esso si può riferire a:</h2>
+        <p>1. L'aumento, lento ma estremo, delle temperature medie in giro a tutto il mondo (chiamato riscaldamento globale);</p>
+        <p>2. Una teoria che la Terra andrà incontro un imminente e improvviso raffreddamento (simile all'era glaciale) che durerà per centinaia, se non migliaia di anni (chiamato raffreddamento globale);</p>
+        <p>3. Il cambiamento dei periodi di pioggia;</p>
+        <p>4. La riduzione graduale della luce solare che arriva sulla Terra (chiamato oscuramento globale).</p>
+        <h1>Effetti del cambiamento climatico</h1>
+        <form action="/consigli">
+        <div class="container">
+
+      <!-- 1 -->
+      <div class="card">
+        <div class="titolo">Aumento delle temperature</div>
+
+        <div class="effetti">Effetti:</div>
+        <ul>
+          <li>estati più calde e lunghe;</li>
+          <li>ondate di calore più pericolose;</li>
+          <li>stress su persone e animali;</li>
+          <li>aumento in uso di energia.</li>
+        </ul>
+
+        <div id="aiuto_temperatura" style="display:none;">
+          <h4>piantare alberi e verde urbano;</h4>
+          <h4>ridurre consumo energetico;</h4>
+          <h4>evitare sprechi nei picchi di caldo;</h4>
+          <h4>tetti verdi e ombra nelle città.</h4>
+        </div>
+        <input class="bottone" type="button" value="Cosa puoi fare:"
+        onclick="document.getElementById('aiuto_temperatura').style.display='block'; this.remove();">
+      </div><br><br>
+
+      <!-- 2 -->
+      <div class="card">
+        <div class="titolo">Piogge estreme e alluvioni</div>
+
+        <div class="effetti">Effetti:</div>
+        <ul>
+          <li>allagamenti improvvisi;</li>
+          <li>frane;</li>
+          <li>danni a infrastrutture.</li>
+        </ul>
+
+        <div id="aiuto_pioggia" style="display:none;">
+          <h4>migliorare drenaggio urbano;</h4>
+          <h4>evitare costruzioni in zone a rischio;</h4>
+          <h4>pulizia di fiumi e canali;</h4>
+          <h4>ridurre cementificazione.</h4>
+        </div>
+        <input class="bottone" type="button" value="Cosa puoi fare:"
+        onclick="document.getElementById('aiuto_pioggia').style.display='block'; this.remove();">
+      </div><br><br>
+
+      <!-- 3 -->
+      <div class="card">
+        <div class="titolo">Siccità e scarsità d’acqua</div>
+
+        <div class="effetti">Effetti:</div>
+        <ul>
+          <li>raccolti agricoli ridotti;</li>
+          <li>crisi idrica;</li>
+          <li>aumento prezzi del cibo.</li>
+        </ul>
+
+        <div id="aiuto_secco" style="display:none;">
+          <h4>ridurre sprechi d’acqua;</h4>
+          <h4>irrigazione intelligente;</h4>
+          <h4>riutilizzo d'acqua;</h4>
+          <h4>colture resistenti alla siccità.</h4>
+        </div>
+        <input class="bottone" type="button" value="Cosa puoi fare:"
+        onclick="document.getElementById('aiuto_secco').style.display='block'; this.remove();">
+      </div><br><br>
+
+      <!-- 4 -->
+      <div class="card">
+        <div class="titolo">Aumento del livello del mare</div>
+
+        <div class="effetti">Effetti:</div>
+        <ul>
+          <li>erosione delle coste;</li>
+          <li>allagamenti in zone costiere;</li>
+          <li>perdita di habitat.</li>
+        </ul>
+
+        <div id="aiuto_allagamento" style="display:none;">
+          <h4>barriere costiere naturali;</h4>
+          <h4>pianificazione urbana;</h4>
+          <h4>ridurre emissioni globali.</h4>
+        </div>
+        <input class="bottone" type="button" value="Cosa puoi fare:"
+        onclick="document.getElementById('aiuto_allagamento').style.display='block'; this.remove();">
+      </div><br><br>
+
+      <!-- 5 -->
+      <div class="card">
+        <div class="titolo">Eventi estremi</div>
+
+        <div class="effetti">Effetti:</div>
+        <ul>
+          <li>tempeste più forti;</li>
+          <li>incendi più frequenti;</li>
+          <li>danni economici.</li>
+        </ul>
+
+        <div id="aiuto_catastrofe" style="display:none;">
+          <h4>sistemi di allerta precoce;</h4>
+          <h4>edifici più resistenti;</h4>
+          <h4>gestione forestale;</h4>
+          <h4>riduzione di emissioni gas serra.</h4>
+        </div>
+        <input class="bottone" type="button" value="Cosa puoi fare:"
+        onclick="document.getElementById('aiuto_catastrofe').style.display='block'; this.remove();">
+      </div><br><br>
+
+    </div><br>
+    </form>
+      </div></center>
+      {% endblock %}
+    </body>
+</html>
